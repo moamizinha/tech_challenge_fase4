@@ -1,0 +1,7 @@
+audio_id,paciente_id,timestamp,arquivo_audio_simulado,transcricao,termos_esperados,gravidade_esperada,observacao
+AUDIO_001,PACIENTE_001,2026-07-01 08:00:00,consulta_paciente_001.wav,"Paciente relata estar bem, sem dor, sem falta de ar e sem tontura.",nenhum,normal,Consulta simulada sem sinais críticos
+AUDIO_002,PACIENTE_002,2026-07-01 08:10:00,consulta_paciente_002.wav,"Paciente relata falta de ar, tontura e cansaço extremo durante a consulta.",falta de ar;tontura;cansaço extremo,crítico,Situação respiratória com sinais de risco
+AUDIO_003,PACIENTE_003,2026-07-01 08:15:00,consulta_paciente_003.wav,"Paciente informa fadiga persistente e fraqueza ao caminhar.",fadiga;fraqueza,atenção,Sintomas leves a moderados
+AUDIO_004,PACIENTE_004,2026-07-01 08:20:00,consulta_paciente_004.wav,"Paciente relata dor no peito e respiração ofegante.",dor no peito;respiração ofegante,crítico,Sintomas cardiovasculares e respiratórios
+AUDIO_005,PACIENTE_005,2026-07-01 08:25:00,consulta_paciente_005.wav,"Paciente apresenta dificuldade para falar e confusão mental após queda.",dificuldade para falar;confusão mental,crítico,Possível alteração neurológica
+AUDIO_006,PACIENTE_006,2026-07-01 08:30:00,consulta_paciente_006.wav,"Paciente relata apenas leve cansaço após exercício de fisioterapia.",cansaço,atenção,Alteração leve após esforço
