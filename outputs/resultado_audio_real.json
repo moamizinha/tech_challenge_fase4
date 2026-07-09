@@ -1,0 +1,29 @@
+{
+    "tipo_dado": "audio_texto",
+    "evento": "analise_de_transcricao",
+    "gravidade": "crítico",
+    "timestamp": "2026-07-09T17:30:56.950487",
+    "descricao": "paciente relata falta de ar tontura e cansaço extremo durante a consulta",
+    "termos_detectados": [
+        {
+            "termo": "cansaço extremo",
+            "categoria": "geral",
+            "gravidade": "alto",
+            "descricao": "Pode indicar piora clínica ou baixa tolerância ao esforço"
+        },
+        {
+            "termo": "falta de ar",
+            "categoria": "respiratorio",
+            "gravidade": "crítico",
+            "descricao": "Indica possível dificuldade respiratória relevante"
+        },
+        {
+            "termo": "tontura",
+            "categoria": "neurologico",
+            "gravidade": "alto",
+            "descricao": "Pode estar associada a queda de pressão ou alteração neurológica"
+        }
+    ],
+    "arquivo_audio": "data\\audios\\consulta_audio_real.wav",
+    "metodo_transcricao": "SpeechRecognition - Google Web Speech API"
+}

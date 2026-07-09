@@ -1,0 +1,72 @@
+﻿
+====================================
+DEMONSTRAÃ├O DO MËDULO DE ┴UDIO
+====================================
+
+------------------------------------
+┴udio ID: AUDIO_001
+Paciente: PACIENTE_001
+Arquivo simulado: consulta_paciente_001.wav
+Gravidade detectada: normal
+Gravidade esperada: normal
+TranscriþÒo: Paciente relata estar bem, sem dor, sem falta de ar e sem tontura.
+Termos detectados: nenhum
+
+------------------------------------
+┴udio ID: AUDIO_002
+Paciente: PACIENTE_002
+Arquivo simulado: consulta_paciente_002.wav
+Gravidade detectada: crÝtico
+Gravidade esperada: crÝtico
+TranscriþÒo: Paciente relata falta de ar, tontura e cansaþo extremo durante a consulta.
+Termos detectados:
+- falta de ar | respiratorio | crÝtico
+- cansaþo extremo | geral | alto
+- tontura | neurologico | alto
+- cansaþo | geral | atenþÒo
+
+------------------------------------
+┴udio ID: AUDIO_003
+Paciente: PACIENTE_003
+Arquivo simulado: consulta_paciente_003.wav
+Gravidade detectada: atenþÒo
+Gravidade esperada: atenþÒo
+TranscriþÒo: Paciente informa fadiga persistente e fraqueza ao caminhar.
+Termos detectados:
+- fadiga | geral | atenþÒo
+- fraqueza | geral | atenþÒo
+
+------------------------------------
+┴udio ID: AUDIO_004
+Paciente: PACIENTE_004
+Arquivo simulado: consulta_paciente_004.wav
+Gravidade detectada: crÝtico
+Gravidade esperada: crÝtico
+TranscriþÒo: Paciente relata dor no peito e respiraþÒo ofegante.
+Termos detectados:
+- dor no peito | cardiovascular | crÝtico
+- respiraþÒo ofegante | respiratorio | alto
+
+------------------------------------
+┴udio ID: AUDIO_005
+Paciente: PACIENTE_005
+Arquivo simulado: consulta_paciente_005.wav
+Gravidade detectada: crÝtico
+Gravidade esperada: crÝtico
+TranscriþÒo: Paciente apresenta dificuldade para falar e confusÒo mental ap¾s queda.
+Termos detectados:
+- dificuldade para falar | neurologico | alto
+- confusÒo mental | neurologico | crÝtico
+
+------------------------------------
+┴udio ID: AUDIO_006
+Paciente: PACIENTE_006
+Arquivo simulado: consulta_paciente_006.wav
+Gravidade detectada: atenþÒo
+Gravidade esperada: atenþÒo
+TranscriþÒo: Paciente relata apenas leve cansaþo ap¾s exercÝcio de fisioterapia.
+Termos detectados:
+- cansaþo | geral | atenþÒo
+
+Arquivo gerado com sucesso:
+outputs/resultado_audio.json

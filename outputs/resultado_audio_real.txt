@@ -1,0 +1,14 @@
+﻿
+====================================
+DEMONSTRAÃ├O COM ┴UDIO REAL
+====================================
+
+TranscriþÒo obtida:
+paciente relata falta de ar tontura e cansaþo extremo durante a consulta
+
+Resultado da anßlise:
+Gravidade: crÝtico
+Termos detectados: [{'termo': 'cansaþo extremo', 'categoria': 'geral', 'gravidade': 'alto', 'descricao': 'Pode indicar piora clÝnica ou baixa tolerÔncia ao esforþo'}, {'termo': 'falta de ar', 'categoria': 'respiratorio', 'gravidade': 'crÝtico', 'descricao': 'Indica possÝvel dificuldade respirat¾ria relevante'}, {'termo': 'tontura', 'categoria': 'neurologico', 'gravidade': 'alto', 'descricao': 'Pode estar associada a queda de pressÒo ou alteraþÒo neurol¾gica'}]
+
+Arquivo gerado com sucesso:
+outputs\resultado_audio_real.json

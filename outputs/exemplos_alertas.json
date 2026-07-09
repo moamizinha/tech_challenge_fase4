@@ -1,70 +1,79 @@
 {
-  "paciente_id": "PACIENTE_002",
-  "timestamp": "2026-07-01T08:10:00",
-  "gravidade_final": "critico",
-  "recomendacao": "Acionar equipe médica imediatamente e priorizar atendimento.",
-  "resultados_modulos": [
-    {
-      "tipo_dado": "audio_texto",
-      "evento": "analise_de_transcricao",
-      "gravidade": "critico",
-      "descricao": "Paciente relata falta de ar, tontura e cansaço extremo durante a consulta.",
-      "termos_detectados": [
+    "paciente_id": "PACIENTE_SIMULADO_001",
+    "timestamp": "2026-07-09T17:07:45.773701",
+    "gravidade_final": "crítico",
+    "recomendacao": "Acionar equipe médica imediatamente e priorizar atendimento.",
+    "resultados_modulos": [
         {
-          "termo": "falta de ar",
-          "gravidade": "critico"
+            "tipo_dado": "audio_texto",
+            "evento": "analise_de_transcricao",
+            "gravidade": "crítico",
+            "timestamp": "2026-07-09T17:07:45.773701",
+            "descricao": "Paciente relata falta de ar, tontura e cansaço extremo durante a consulta.",
+            "termos_detectados": [
+                {
+                    "termo": "falta de ar",
+                    "categoria": "respiratorio",
+                    "gravidade": "crítico",
+                    "descricao": "Indica possível dificuldade respiratória relevante"
+                },
+                {
+                    "termo": "cansaço extremo",
+                    "categoria": "geral",
+                    "gravidade": "alto",
+                    "descricao": "Pode indicar piora clínica ou baixa tolerância ao esforço"
+                },
+                {
+                    "termo": "tontura",
+                    "categoria": "neurologico",
+                    "gravidade": "alto",
+                    "descricao": "Pode estar associada a queda de pressão ou alteração neurológica"
+                }
+            ]
         },
         {
-          "termo": "tontura",
-          "gravidade": "alto"
+            "tipo_dado": "sinais_vitais",
+            "evento": "deteccao_de_anomalias",
+            "gravidade": "crítico",
+            "timestamp": "2026-07-09T17:07:45.773701",
+            "sinais_analisados": {
+                "frequencia_cardiaca": 132,
+                "pressao_sistolica": 165,
+                "pressao_diastolica": 105,
+                "saturacao_oxigenio": 88,
+                "temperatura": 38.2
+            },
+            "alertas": [
+                {
+                    "evento": "taquicardia",
+                    "gravidade": "alto",
+                    "descricao": "Frequência cardíaca elevada: 132 bpm."
+                },
+                {
+                    "evento": "pressao_alta",
+                    "gravidade": "alto",
+                    "descricao": "Pressão arterial elevada: 165/105 mmHg."
+                },
+                {
+                    "evento": "hipoxemia",
+                    "gravidade": "crítico",
+                    "descricao": "Saturação de oxigênio crítica: 88%."
+                },
+                {
+                    "evento": "febre",
+                    "gravidade": "atenção",
+                    "descricao": "Temperatura elevada: 38.2 °C."
+                }
+            ]
         },
         {
-          "termo": "cansaço extremo",
-          "gravidade": "alto"
+            "tipo_dado": "video",
+            "evento": "analise_de_video_clinico",
+            "gravidade": "alto",
+            "timestamp": "2026-07-09T17:07:45.773701",
+            "evento_observado": "Paciente apresentou movimento brusco durante exercício de fisioterapia.",
+            "intensidade_movimento": 0.82,
+            "descricao": "Movimento ou evento fora do padrão esperado detectado no vídeo."
         }
-      ]
-    },
-    {
-      "tipo_dado": "sinais_vitais",
-      "evento": "deteccao_de_anomalias",
-      "gravidade": "critico",
-      "sinais_analisados": {
-        "frequencia_cardiaca": 132,
-        "pressao_sistolica": 165,
-        "pressao_diastolica": 105,
-        "saturacao_oxigenio": 88,
-        "temperatura": 38.2
-      },
-      "alertas": [
-        {
-          "evento": "taquicardia",
-          "gravidade": "alto",
-          "descricao": "Frequência cardíaca elevada: 132 bpm."
-        },
-        {
-          "evento": "pressao_alta",
-          "gravidade": "alto",
-          "descricao": "Pressão arterial elevada: 165/105 mmHg."
-        },
-        {
-          "evento": "hipoxemia",
-          "gravidade": "critico",
-          "descricao": "Saturação de oxigênio crítica: 88%."
-        },
-        {
-          "evento": "febre",
-          "gravidade": "atencao",
-          "descricao": "Temperatura elevada: 38.2 °C."
-        }
-      ]
-    },
-    {
-      "tipo_dado": "video",
-      "evento": "analise_de_video_clinico",
-      "gravidade": "alto",
-      "descricao": "Movimento ou evento fora do padrão esperado detectado no vídeo.",
-      "evento_observado": "Paciente apresentou movimento brusco durante exercício de fisioterapia.",
-      "intensidade_movimento": 0.82
-    }
-  ]
+    ]
 }

@@ -134,30 +134,59 @@ def definir_gravidade_final(termos_detectados: list) -> str:
 
     return maior_gravidade
 
-
 def analisar_transcricao(transcricao: str) -> dict:
     """
     Analisa uma transcrição de áudio e identifica termos críticos.
+
+    A busca prioriza termos maiores primeiro para evitar duplicidade.
+    Exemplo:
+    Se "cansaço extremo" for detectado, o termo menor "cansaço"
+    não será duplicado na mesma análise.
     """
 
     termos_criticos = carregar_termos_criticos()
     transcricao_normalizada = normalizar_texto(transcricao)
 
-    termos_detectados = []
+    termos_detectados_temp = []
 
-    for item in termos_criticos:
+    termos_ordenados = sorted(
+        termos_criticos,
+        key=lambda item: len(item["termo_normalizado"]),
+        reverse=True
+    )
+
+    for item in termos_ordenados:
         termo_normalizado = item["termo_normalizado"]
 
         if termo_normalizado in transcricao_normalizada:
             if termo_esta_negado(transcricao_normalizada, termo_normalizado):
                 continue
 
-            termos_detectados.append({
+            termo_ja_contemplado = any(
+                termo_normalizado in detectado["termo_normalizado"]
+                for detectado in termos_detectados_temp
+            )
+
+            if termo_ja_contemplado:
+                continue
+
+            termos_detectados_temp.append({
                 "termo": item["termo"],
+                "termo_normalizado": termo_normalizado,
                 "categoria": item["categoria"],
                 "gravidade": item["gravidade"],
                 "descricao": item["descricao"]
             })
+
+    termos_detectados = []
+
+    for item in termos_detectados_temp:
+        termos_detectados.append({
+            "termo": item["termo"],
+            "categoria": item["categoria"],
+            "gravidade": item["gravidade"],
+            "descricao": item["descricao"]
+        })
 
     gravidade_final = definir_gravidade_final(termos_detectados)
 
@@ -169,7 +198,6 @@ def analisar_transcricao(transcricao: str) -> dict:
         "descricao": transcricao,
         "termos_detectados": termos_detectados
     }
-
 
 def analisar_base_transcricoes(caminho_csv: Path = CAMINHO_TRANSCRICOES) -> list:
     """

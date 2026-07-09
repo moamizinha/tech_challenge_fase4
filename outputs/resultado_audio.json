@@ -1,0 +1,145 @@
+[
+    {
+        "tipo_dado": "audio_texto",
+        "evento": "analise_de_transcricao",
+        "gravidade": "normal",
+        "timestamp": "2026-07-09T17:15:38.441812",
+        "descricao": "Paciente relata estar bem, sem dor, sem falta de ar e sem tontura.",
+        "termos_detectados": [],
+        "audio_id": "AUDIO_001",
+        "paciente_id": "PACIENTE_001",
+        "arquivo_audio_simulado": "consulta_paciente_001.wav",
+        "gravidade_esperada": "normal"
+    },
+    {
+        "tipo_dado": "audio_texto",
+        "evento": "analise_de_transcricao",
+        "gravidade": "crítico",
+        "timestamp": "2026-07-09T17:15:38.441812",
+        "descricao": "Paciente relata falta de ar, tontura e cansaço extremo durante a consulta.",
+        "termos_detectados": [
+            {
+                "termo": "falta de ar",
+                "categoria": "respiratorio",
+                "gravidade": "crítico",
+                "descricao": "Indica possível dificuldade respiratória relevante"
+            },
+            {
+                "termo": "cansaço extremo",
+                "categoria": "geral",
+                "gravidade": "alto",
+                "descricao": "Pode indicar piora clínica ou baixa tolerância ao esforço"
+            },
+            {
+                "termo": "tontura",
+                "categoria": "neurologico",
+                "gravidade": "alto",
+                "descricao": "Pode estar associada a queda de pressão ou alteração neurológica"
+            },
+            {
+                "termo": "cansaço",
+                "categoria": "geral",
+                "gravidade": "atenção",
+                "descricao": "Indica cansaço leve ou moderado relatado pelo paciente"
+            }
+        ],
+        "audio_id": "AUDIO_002",
+        "paciente_id": "PACIENTE_002",
+        "arquivo_audio_simulado": "consulta_paciente_002.wav",
+        "gravidade_esperada": "crítico"
+    },
+    {
+        "tipo_dado": "audio_texto",
+        "evento": "analise_de_transcricao",
+        "gravidade": "atenção",
+        "timestamp": "2026-07-09T17:15:38.441812",
+        "descricao": "Paciente informa fadiga persistente e fraqueza ao caminhar.",
+        "termos_detectados": [
+            {
+                "termo": "fadiga",
+                "categoria": "geral",
+                "gravidade": "atenção",
+                "descricao": "Indica cansaço persistente ou redução da capacidade funcional"
+            },
+            {
+                "termo": "fraqueza",
+                "categoria": "geral",
+                "gravidade": "atenção",
+                "descricao": "Pode indicar alteração clínica ou dificuldade motora"
+            }
+        ],
+        "audio_id": "AUDIO_003",
+        "paciente_id": "PACIENTE_003",
+        "arquivo_audio_simulado": "consulta_paciente_003.wav",
+        "gravidade_esperada": "atenção"
+    },
+    {
+        "tipo_dado": "audio_texto",
+        "evento": "analise_de_transcricao",
+        "gravidade": "crítico",
+        "timestamp": "2026-07-09T17:15:38.441812",
+        "descricao": "Paciente relata dor no peito e respiração ofegante.",
+        "termos_detectados": [
+            {
+                "termo": "dor no peito",
+                "categoria": "cardiovascular",
+                "gravidade": "crítico",
+                "descricao": "Pode indicar evento cardíaco ou emergência clínica"
+            },
+            {
+                "termo": "respiração ofegante",
+                "categoria": "respiratorio",
+                "gravidade": "alto",
+                "descricao": "Indica esforço respiratório aumentado"
+            }
+        ],
+        "audio_id": "AUDIO_004",
+        "paciente_id": "PACIENTE_004",
+        "arquivo_audio_simulado": "consulta_paciente_004.wav",
+        "gravidade_esperada": "crítico"
+    },
+    {
+        "tipo_dado": "audio_texto",
+        "evento": "analise_de_transcricao",
+        "gravidade": "crítico",
+        "timestamp": "2026-07-09T17:15:38.441812",
+        "descricao": "Paciente apresenta dificuldade para falar e confusão mental após queda.",
+        "termos_detectados": [
+            {
+                "termo": "dificuldade para falar",
+                "categoria": "neurologico",
+                "gravidade": "alto",
+                "descricao": "Pode indicar alteração neurológica ou disartria"
+            },
+            {
+                "termo": "confusão mental",
+                "categoria": "neurologico",
+                "gravidade": "crítico",
+                "descricao": "Pode indicar alteração aguda do estado mental"
+            }
+        ],
+        "audio_id": "AUDIO_005",
+        "paciente_id": "PACIENTE_005",
+        "arquivo_audio_simulado": "consulta_paciente_005.wav",
+        "gravidade_esperada": "crítico"
+    },
+    {
+        "tipo_dado": "audio_texto",
+        "evento": "analise_de_transcricao",
+        "gravidade": "atenção",
+        "timestamp": "2026-07-09T17:15:38.441812",
+        "descricao": "Paciente relata apenas leve cansaço após exercício de fisioterapia.",
+        "termos_detectados": [
+            {
+                "termo": "cansaço",
+                "categoria": "geral",
+                "gravidade": "atenção",
+                "descricao": "Indica cansaço leve ou moderado relatado pelo paciente"
+            }
+        ],
+        "audio_id": "AUDIO_006",
+        "paciente_id": "PACIENTE_006",
+        "arquivo_audio_simulado": "consulta_paciente_006.wav",
+        "gravidade_esperada": "atenção"
+    }
+]
