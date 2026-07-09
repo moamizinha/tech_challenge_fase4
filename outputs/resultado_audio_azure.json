@@ -1,0 +1,70 @@
+{
+    "tipo_dado": "audio_azure",
+    "evento": "analise_audio_com_azure",
+    "arquivo_audio": "data\\audios\\consulta_audio_real.wav",
+    "metodo_transcricao": "Azure Speech to Text",
+    "metodo_texto": "Azure Text Analytics",
+    "transcricao": "Paciente relata falta de ar, tontura e cansaço extremo durante a consulta.",
+    "sentimento_azure": "negative",
+    "confianca_sentimento": {
+        "positivo": 0.0,
+        "neutro": 0.0,
+        "negativo": 1.0
+    },
+    "frases_chave_azure": [
+        "cansaço",
+        "Paciente",
+        "falta",
+        "ar",
+        "tontura",
+        "consulta"
+    ],
+    "gravidade": "crítico",
+    "termos_detectados": [
+        {
+            "termo": "cansaço extremo",
+            "categoria": "geral",
+            "gravidade": "alto",
+            "descricao": "Pode indicar piora clínica ou baixa tolerância ao esforço"
+        },
+        {
+            "termo": "falta de ar",
+            "categoria": "respiratorio",
+            "gravidade": "crítico",
+            "descricao": "Indica possível dificuldade respiratória relevante"
+        },
+        {
+            "termo": "tontura",
+            "categoria": "neurologico",
+            "gravidade": "alto",
+            "descricao": "Pode estar associada a queda de pressão ou alteração neurológica"
+        }
+    ],
+    "resultado_classificador_local": {
+        "tipo_dado": "audio_texto",
+        "evento": "analise_de_transcricao",
+        "gravidade": "crítico",
+        "timestamp": "2026-07-09T18:55:21.954939",
+        "descricao": "Paciente relata falta de ar, tontura e cansaço extremo durante a consulta.",
+        "termos_detectados": [
+            {
+                "termo": "cansaço extremo",
+                "categoria": "geral",
+                "gravidade": "alto",
+                "descricao": "Pode indicar piora clínica ou baixa tolerância ao esforço"
+            },
+            {
+                "termo": "falta de ar",
+                "categoria": "respiratorio",
+                "gravidade": "crítico",
+                "descricao": "Indica possível dificuldade respiratória relevante"
+            },
+            {
+                "termo": "tontura",
+                "categoria": "neurologico",
+                "gravidade": "alto",
+                "descricao": "Pode estar associada a queda de pressão ou alteração neurológica"
+            }
+        ]
+    }
+}
