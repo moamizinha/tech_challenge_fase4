@@ -1,0 +1,11 @@
+termo,categoria,gravidade,descricao
+falta de ar,respiratorio,critico,Indica possível dificuldade respiratória relevante
+dor no peito,cardiovascular,critico,Pode indicar evento cardíaco ou emergência clínica
+desmaio,neurologico,critico,Perda de consciência exige avaliação imediata
+cansaço extremo,geral,alto,Pode indicar piora clínica ou baixa tolerância ao esforço
+tontura,neurologico,alto,Pode estar associada a queda de pressão ou alteração neurológica
+fadiga,geral,atencao,Indica cansaço persistente ou redução da capacidade funcional
+fraqueza,geral,atencao,Pode indicar alteração clínica ou dificuldade motora
+dificuldade para falar,neurologico,alto,Pode indicar alteração neurológica ou disartria
+respiração ofegante,respiratorio,alto,Indica esforço respiratório aumentado
+confusão mental,neurologico,critico,Pode indicar alteração aguda do estado mental
