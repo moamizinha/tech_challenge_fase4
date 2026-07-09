@@ -1,0 +1,9 @@
+cenario_id,paciente_id,descricao,tipo_dado,status_esperado,gravidade_esperada,acao_esperada
+CENARIO_001,PACIENTE_001,Paciente estável sem alterações relevantes,audio_video_sinais,normal,normal,Manter monitoramento de rotina
+CENARIO_002,PACIENTE_002,Paciente relata falta de ar e apresenta baixa saturação,audio_sinais,risco_respiratorio,critico,Acionar equipe médica imediatamente
+CENARIO_003,PACIENTE_003,Paciente apresenta frequência cardíaca baixa durante repouso,sinais_vitais,alteracao_cardiaca,alto,Encaminhar para avaliação clínica urgente
+CENARIO_004,PACIENTE_004,Paciente apresenta fadiga e saturação levemente reduzida,audio_sinais,observacao,atencao,Manter paciente em observação
+CENARIO_005,PACIENTE_005,Paciente sem queixas e sinais vitais dentro do esperado,audio_sinais,normal,normal,Sem alerta necessário
+CENARIO_006,PACIENTE_006,Paciente apresenta dor no peito, febre e queda de saturação,audio_sinais,emergencia,critico,Priorizar atendimento médico
+CENARIO_007,PACIENTE_007,Paciente apresenta tontura e movimento instável durante fisioterapia,audio_video,risco_queda,alto,Avaliar risco de queda e acompanhar movimentação
+CENARIO_008,PACIENTE_008,Paciente apresenta movimento brusco durante exercício de fisioterapia,video,alteracao_movimento,alto,Revisar execução do exercício e alertar profissional responsável
