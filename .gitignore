@@ -1,0 +1,42 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+
+# Ambientes virtuais
+venv/
+.env/
+.venv/
+
+# Arquivos de ambiente e credenciais
+.env
+.env.local
+*.key
+*.pem
+
+# Jupyter Notebook
+.ipynb_checkpoints/
+
+# Sistema operacional
+.DS_Store
+Thumbs.db
+
+# IDEs e editores
+.vscode/
+.idea/
+
+# Outputs temporários
+outputs/temp/
+outputs/prints_execucao/temp/
+
+# Logs
+*.log
+
+# Arquivos grandes de vídeo ou áudio locais
+*.mp4
+*.avi
+*.mov
+*.mkv
+*.wav
+*.mp3
