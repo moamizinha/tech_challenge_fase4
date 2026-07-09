@@ -1,0 +1,11 @@
+pandas
+numpy
+opencv-python
+matplotlib
+scikit-learn
+jupyter
+python-dotenv
+SpeechRecognition
+openai-whisper
+azure-cognitiveservices-speech
+azure-ai-textanalytics
