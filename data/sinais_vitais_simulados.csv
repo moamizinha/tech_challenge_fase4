@@ -1,0 +1,9 @@
+paciente_id,timestamp,frequencia_cardiaca,pressao_sistolica,pressao_diastolica,saturacao_oxigenio,temperatura,status_esperado
+PACIENTE_001,2026-07-01 08:00:00,82,120,80,98,36.5,normal
+PACIENTE_001,2026-07-01 08:05:00,88,125,82,97,36.7,normal
+PACIENTE_002,2026-07-01 08:10:00,132,165,105,88,38.2,critico
+PACIENTE_003,2026-07-01 08:15:00,48,90,60,95,36.1,alto
+PACIENTE_004,2026-07-01 08:20:00,110,150,95,93,37.8,atencao
+PACIENTE_005,2026-07-01 08:25:00,76,118,78,99,36.4,normal
+PACIENTE_006,2026-07-01 08:30:00,140,170,110,86,39.0,critico
+PACIENTE_007,2026-07-01 08:35:00,58,100,65,94,35.8,atencao
