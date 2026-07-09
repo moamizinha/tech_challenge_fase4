@@ -2,7 +2,7 @@
     "tipo_dado": "audio_texto",
     "evento": "analise_de_transcricao",
     "gravidade": "crítico",
-    "timestamp": "2026-07-09T17:30:56.950487",
+    "timestamp": "2026-07-09T17:51:12.332826",
     "descricao": "paciente relata falta de ar tontura e cansaço extremo durante a consulta",
     "termos_detectados": [
         {

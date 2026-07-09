@@ -1,0 +1,33 @@
+﻿
+==============================
+DEMONSTRAÃ├O DO PIPELINE
+==============================
+Paciente: PACIENTE_SIMULADO_001
+Timestamp: 2026-07-09T17:52:07.415458
+Gravidade final: crÝtico
+RecomendaþÒo: Acionar equipe mÚdica imediatamente e priorizar atendimento.
+
+Resultados por m¾dulo:
+------------------------------
+Tipo de dado: audio_texto
+Evento: analise_de_transcricao
+Gravidade: crÝtico
+DescriþÒo: Paciente relata falta de ar, tontura e cansaþo extremo durante a consulta.
+------------------------------
+Tipo de dado: video
+Evento: analise_de_video_clinico
+Gravidade: alto
+DescriþÒo: Movimento ou evento fora do padrÒo esperado detectado no vÝdeo.
+------------------------------
+Tipo de dado: imagem_sinais_vitais
+Evento: analise_imagem_monitor
+Gravidade: alto
+DescriþÒo: Anßlise estruturada de imagem de monitor multiparamÚtrico.
+------------------------------
+Tipo de dado: prescricoes
+Evento: analise_de_prescricoes
+Gravidade: crÝtico
+DescriþÒo: Anßlise de prescriþ§es simuladas para identificaþÒo de alteraþ§es inesperadas.
+
+Arquivo gerado com sucesso:
+outputs\exemplos_alertas.json

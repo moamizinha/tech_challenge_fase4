@@ -1,0 +1,9 @@
+prescricao_id,paciente_id,timestamp,medicamento,dose_atual,dose_anterior,unidade,frequencia,tipo_alteracao,observacao,gravidade_esperada
+PRESC_001,PACIENTE_001,2026-07-01 08:00:00,Dipirona,500,500,mg,6/6h,sem_alteracao,Prescrição mantida sem alteração relevante,normal
+PRESC_002,PACIENTE_002,2026-07-01 08:10:00,Insulina,20,8,UI,antes das refeições,aumento_dose,Aumento expressivo de dose em medicamento sensível,alto
+PRESC_003,PACIENTE_003,2026-07-01 08:15:00,Heparina,5000,5000,UI,12/12h,duplicidade,Possível duplicidade de anticoagulante na prescrição,critico
+PRESC_004,PACIENTE_004,2026-07-01 08:20:00,Morfina,10,2,mg,4/4h,aumento_dose,Aumento relevante de opioide,critico
+PRESC_005,PACIENTE_005,2026-07-01 08:25:00,Losartana,50,50,mg,1x ao dia,sem_alteracao,Prescrição sem alteração crítica,normal
+PRESC_006,PACIENTE_006,2026-07-01 08:30:00,Antibiótico,0,1000,mg,12/12h,suspensao,Suspensão inesperada de medicamento em tratamento ativo,alto
+PRESC_007,PACIENTE_007,2026-07-01 08:35:00,Midazolam,15,5,mg,se necessário,aumento_dose,Aumento de sedativo com potencial risco respiratório,critico
+PRESC_008,PACIENTE_008,2026-07-01 08:40:00,Paracetamol,750,500,mg,6/6h,aumento_dose,Aumento leve de dose dentro de faixa esperada,atencao

@@ -1,0 +1,49 @@
+{
+    "tipo_dado": "imagem_sinais_vitais",
+    "evento": "analise_imagem_monitor",
+    "gravidade": "alto",
+    "timestamp": "2026-07-09T17:51:21.800508",
+    "sinais_extraidos": {
+        "fonte": "imagem_monitor_multiparametrico",
+        "arquivo_imagem": "data\\images\\monitor_sinais_vitais.png",
+        "timestamp_analise": "2026-07-09T17:51:21.800508",
+        "frequencia_cardiaca": 120,
+        "pressao_sistolica": 119,
+        "pressao_diastolica": 79,
+        "pressao_media": 90,
+        "saturacao_oxigenio": 98,
+        "frequencia_respiratoria": 24,
+        "etco2": 35,
+        "temperatura": 36.7,
+        "pvc_sistolica": 18,
+        "pvc_diastolica": 12,
+        "pvc_media": 14,
+        "alertas_visuais_monitor": [
+            "FC ALTA",
+            "PVC ALTA"
+        ]
+    },
+    "alertas": [
+        {
+            "evento": "frequencia_respiratoria_elevada",
+            "gravidade": "atenção",
+            "descricao": "Frequência respiratória elevada: 24 rpm."
+        },
+        {
+            "evento": "pvc_elevada",
+            "gravidade": "alto",
+            "descricao": "PVC média elevada: 14 mmHg."
+        },
+        {
+            "evento": "alerta_visual_fc_alta",
+            "gravidade": "alto",
+            "descricao": "O monitor apresentou alerta visual de frequência cardíaca alta."
+        },
+        {
+            "evento": "alerta_visual_pvc_alta",
+            "gravidade": "alto",
+            "descricao": "O monitor apresentou alerta visual de PVC alta."
+        }
+    ],
+    "descricao": "Análise estruturada de imagem de monitor multiparamétrico."
+}

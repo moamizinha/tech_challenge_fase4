@@ -1,6 +1,6 @@
 {
     "paciente_id": "PACIENTE_SIMULADO_001",
-    "timestamp": "2026-07-09T17:07:45.773701",
+    "timestamp": "2026-07-09T17:52:07.415458",
     "gravidade_final": "crítico",
     "recomendacao": "Acionar equipe médica imediatamente e priorizar atendimento.",
     "resultados_modulos": [
@@ -8,20 +8,20 @@
             "tipo_dado": "audio_texto",
             "evento": "analise_de_transcricao",
             "gravidade": "crítico",
-            "timestamp": "2026-07-09T17:07:45.773701",
+            "timestamp": "2026-07-09T17:52:07.415458",
             "descricao": "Paciente relata falta de ar, tontura e cansaço extremo durante a consulta.",
             "termos_detectados": [
-                {
-                    "termo": "falta de ar",
-                    "categoria": "respiratorio",
-                    "gravidade": "crítico",
-                    "descricao": "Indica possível dificuldade respiratória relevante"
-                },
                 {
                     "termo": "cansaço extremo",
                     "categoria": "geral",
                     "gravidade": "alto",
                     "descricao": "Pode indicar piora clínica ou baixa tolerância ao esforço"
+                },
+                {
+                    "termo": "falta de ar",
+                    "categoria": "respiratorio",
+                    "gravidade": "crítico",
+                    "descricao": "Indica possível dificuldade respiratória relevante"
                 },
                 {
                     "termo": "tontura",
@@ -32,48 +32,231 @@
             ]
         },
         {
-            "tipo_dado": "sinais_vitais",
-            "evento": "deteccao_de_anomalias",
-            "gravidade": "crítico",
-            "timestamp": "2026-07-09T17:07:45.773701",
-            "sinais_analisados": {
-                "frequencia_cardiaca": 132,
-                "pressao_sistolica": 165,
-                "pressao_diastolica": 105,
-                "saturacao_oxigenio": 88,
-                "temperatura": 38.2
-            },
-            "alertas": [
-                {
-                    "evento": "taquicardia",
-                    "gravidade": "alto",
-                    "descricao": "Frequência cardíaca elevada: 132 bpm."
-                },
-                {
-                    "evento": "pressao_alta",
-                    "gravidade": "alto",
-                    "descricao": "Pressão arterial elevada: 165/105 mmHg."
-                },
-                {
-                    "evento": "hipoxemia",
-                    "gravidade": "crítico",
-                    "descricao": "Saturação de oxigênio crítica: 88%."
-                },
-                {
-                    "evento": "febre",
-                    "gravidade": "atenção",
-                    "descricao": "Temperatura elevada: 38.2 °C."
-                }
-            ]
-        },
-        {
             "tipo_dado": "video",
             "evento": "analise_de_video_clinico",
             "gravidade": "alto",
-            "timestamp": "2026-07-09T17:07:45.773701",
+            "timestamp": "2026-07-09T17:52:07.415458",
             "evento_observado": "Paciente apresentou movimento brusco durante exercício de fisioterapia.",
             "intensidade_movimento": 0.82,
             "descricao": "Movimento ou evento fora do padrão esperado detectado no vídeo."
+        },
+        {
+            "tipo_dado": "imagem_sinais_vitais",
+            "evento": "analise_imagem_monitor",
+            "gravidade": "alto",
+            "timestamp": "2026-07-09T17:52:07.415458",
+            "sinais_extraidos": {
+                "fonte": "imagem_monitor_multiparametrico",
+                "arquivo_imagem": "C:\\Users\\miche\\Projetos\\tech_challenge_fase4\\data\\images\\monitor_sinais_vitais.png",
+                "timestamp_analise": "2026-07-09T17:52:07.415458",
+                "frequencia_cardiaca": 120,
+                "pressao_sistolica": 119,
+                "pressao_diastolica": 79,
+                "pressao_media": 90,
+                "saturacao_oxigenio": 98,
+                "frequencia_respiratoria": 24,
+                "etco2": 35,
+                "temperatura": 36.7,
+                "pvc_sistolica": 18,
+                "pvc_diastolica": 12,
+                "pvc_media": 14,
+                "alertas_visuais_monitor": [
+                    "FC ALTA",
+                    "PVC ALTA"
+                ]
+            },
+            "alertas": [
+                {
+                    "evento": "frequencia_respiratoria_elevada",
+                    "gravidade": "atenção",
+                    "descricao": "Frequência respiratória elevada: 24 rpm."
+                },
+                {
+                    "evento": "pvc_elevada",
+                    "gravidade": "alto",
+                    "descricao": "PVC média elevada: 14 mmHg."
+                },
+                {
+                    "evento": "alerta_visual_fc_alta",
+                    "gravidade": "alto",
+                    "descricao": "O monitor apresentou alerta visual de frequência cardíaca alta."
+                },
+                {
+                    "evento": "alerta_visual_pvc_alta",
+                    "gravidade": "alto",
+                    "descricao": "O monitor apresentou alerta visual de PVC alta."
+                }
+            ],
+            "descricao": "Análise estruturada de imagem de monitor multiparamétrico."
+        },
+        {
+            "tipo_dado": "prescricoes",
+            "evento": "analise_de_prescricoes",
+            "gravidade": "crítico",
+            "timestamp": "2026-07-09T17:52:07.415458",
+            "descricao": "Análise de prescrições simuladas para identificação de alterações inesperadas.",
+            "total_prescricoes_analisadas": 8,
+            "total_prescricoes_com_alerta": 6,
+            "prescricoes_com_alerta": [
+                {
+                    "tipo_dado": "prescricao",
+                    "evento": "analise_de_prescricao",
+                    "prescricao_id": "PRESC_002",
+                    "paciente_id": "PACIENTE_002",
+                    "timestamp": "2026-07-09T17:52:07.415458",
+                    "medicamento": "Insulina",
+                    "dose_atual": 20.0,
+                    "dose_anterior": 8.0,
+                    "unidade": "UI",
+                    "frequencia": "antes das refeições",
+                    "tipo_alteracao": "aumento_dose",
+                    "gravidade": "alto",
+                    "gravidade_esperada": "alto",
+                    "alertas": [
+                        {
+                            "evento": "aumento_dose",
+                            "gravidade": "alto",
+                            "descricao": "Aumento de dose de Insulina: 8 para 20 UI."
+                        },
+                        {
+                            "evento": "medicamento_alto_risco",
+                            "gravidade": "atenção",
+                            "descricao": "Insulina é classificado como medicamento de maior atenção."
+                        }
+                    ],
+                    "descricao": "Aumento expressivo de dose em medicamento sensível"
+                },
+                {
+                    "tipo_dado": "prescricao",
+                    "evento": "analise_de_prescricao",
+                    "prescricao_id": "PRESC_003",
+                    "paciente_id": "PACIENTE_003",
+                    "timestamp": "2026-07-09T17:52:07.415458",
+                    "medicamento": "Heparina",
+                    "dose_atual": 5000.0,
+                    "dose_anterior": 5000.0,
+                    "unidade": "UI",
+                    "frequencia": "12/12h",
+                    "tipo_alteracao": "duplicidade",
+                    "gravidade": "crítico",
+                    "gravidade_esperada": "crítico",
+                    "alertas": [
+                        {
+                            "evento": "duplicidade_prescricao",
+                            "gravidade": "crítico",
+                            "descricao": "Possível duplicidade identificada para Heparina."
+                        },
+                        {
+                            "evento": "medicamento_alto_risco",
+                            "gravidade": "atenção",
+                            "descricao": "Heparina é classificado como medicamento de maior atenção."
+                        }
+                    ],
+                    "descricao": "Possível duplicidade de anticoagulante na prescrição"
+                },
+                {
+                    "tipo_dado": "prescricao",
+                    "evento": "analise_de_prescricao",
+                    "prescricao_id": "PRESC_004",
+                    "paciente_id": "PACIENTE_004",
+                    "timestamp": "2026-07-09T17:52:07.415458",
+                    "medicamento": "Morfina",
+                    "dose_atual": 10.0,
+                    "dose_anterior": 2.0,
+                    "unidade": "mg",
+                    "frequencia": "4/4h",
+                    "tipo_alteracao": "aumento_dose",
+                    "gravidade": "crítico",
+                    "gravidade_esperada": "crítico",
+                    "alertas": [
+                        {
+                            "evento": "aumento_dose",
+                            "gravidade": "crítico",
+                            "descricao": "Aumento de dose de Morfina: 2 para 10 mg."
+                        },
+                        {
+                            "evento": "medicamento_alto_risco",
+                            "gravidade": "atenção",
+                            "descricao": "Morfina é classificado como medicamento de maior atenção."
+                        }
+                    ],
+                    "descricao": "Aumento relevante de opioide"
+                },
+                {
+                    "tipo_dado": "prescricao",
+                    "evento": "analise_de_prescricao",
+                    "prescricao_id": "PRESC_006",
+                    "paciente_id": "PACIENTE_006",
+                    "timestamp": "2026-07-09T17:52:07.415458",
+                    "medicamento": "Antibiótico",
+                    "dose_atual": 0.0,
+                    "dose_anterior": 1000.0,
+                    "unidade": "mg",
+                    "frequencia": "12/12h",
+                    "tipo_alteracao": "suspensao",
+                    "gravidade": "alto",
+                    "gravidade_esperada": "alto",
+                    "alertas": [
+                        {
+                            "evento": "suspensao_inesperada",
+                            "gravidade": "alto",
+                            "descricao": "Suspensão inesperada de Antibiótico em tratamento ativo."
+                        }
+                    ],
+                    "descricao": "Suspensão inesperada de medicamento em tratamento ativo"
+                },
+                {
+                    "tipo_dado": "prescricao",
+                    "evento": "analise_de_prescricao",
+                    "prescricao_id": "PRESC_007",
+                    "paciente_id": "PACIENTE_007",
+                    "timestamp": "2026-07-09T17:52:07.415458",
+                    "medicamento": "Midazolam",
+                    "dose_atual": 15.0,
+                    "dose_anterior": 5.0,
+                    "unidade": "mg",
+                    "frequencia": "se necessário",
+                    "tipo_alteracao": "aumento_dose",
+                    "gravidade": "crítico",
+                    "gravidade_esperada": "crítico",
+                    "alertas": [
+                        {
+                            "evento": "aumento_dose",
+                            "gravidade": "crítico",
+                            "descricao": "Aumento de dose de Midazolam: 5 para 15 mg."
+                        },
+                        {
+                            "evento": "medicamento_alto_risco",
+                            "gravidade": "atenção",
+                            "descricao": "Midazolam é classificado como medicamento de maior atenção."
+                        }
+                    ],
+                    "descricao": "Aumento de sedativo com potencial risco respiratório"
+                },
+                {
+                    "tipo_dado": "prescricao",
+                    "evento": "analise_de_prescricao",
+                    "prescricao_id": "PRESC_008",
+                    "paciente_id": "PACIENTE_008",
+                    "timestamp": "2026-07-09T17:52:07.415458",
+                    "medicamento": "Paracetamol",
+                    "dose_atual": 750.0,
+                    "dose_anterior": 500.0,
+                    "unidade": "mg",
+                    "frequencia": "6/6h",
+                    "tipo_alteracao": "aumento_dose",
+                    "gravidade": "atenção",
+                    "gravidade_esperada": "atenção",
+                    "alertas": [
+                        {
+                            "evento": "aumento_dose",
+                            "gravidade": "atenção",
+                            "descricao": "Aumento de dose de Paracetamol: 500 para 750 mg."
+                        }
+                    ],
+                    "descricao": "Aumento leve de dose dentro de faixa esperada"
+                }
+            ]
         }
     ]
 }
