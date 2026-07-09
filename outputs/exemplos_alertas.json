@@ -1,0 +1,70 @@
+{
+  "paciente_id": "PACIENTE_002",
+  "timestamp": "2026-07-01T08:10:00",
+  "gravidade_final": "critico",
+  "recomendacao": "Acionar equipe médica imediatamente e priorizar atendimento.",
+  "resultados_modulos": [
+    {
+      "tipo_dado": "audio_texto",
+      "evento": "analise_de_transcricao",
+      "gravidade": "critico",
+      "descricao": "Paciente relata falta de ar, tontura e cansaço extremo durante a consulta.",
+      "termos_detectados": [
+        {
+          "termo": "falta de ar",
+          "gravidade": "critico"
+        },
+        {
+          "termo": "tontura",
+          "gravidade": "alto"
+        },
+        {
+          "termo": "cansaço extremo",
+          "gravidade": "alto"
+        }
+      ]
+    },
+    {
+      "tipo_dado": "sinais_vitais",
+      "evento": "deteccao_de_anomalias",
+      "gravidade": "critico",
+      "sinais_analisados": {
+        "frequencia_cardiaca": 132,
+        "pressao_sistolica": 165,
+        "pressao_diastolica": 105,
+        "saturacao_oxigenio": 88,
+        "temperatura": 38.2
+      },
+      "alertas": [
+        {
+          "evento": "taquicardia",
+          "gravidade": "alto",
+          "descricao": "Frequência cardíaca elevada: 132 bpm."
+        },
+        {
+          "evento": "pressao_alta",
+          "gravidade": "alto",
+          "descricao": "Pressão arterial elevada: 165/105 mmHg."
+        },
+        {
+          "evento": "hipoxemia",
+          "gravidade": "critico",
+          "descricao": "Saturação de oxigênio crítica: 88%."
+        },
+        {
+          "evento": "febre",
+          "gravidade": "atencao",
+          "descricao": "Temperatura elevada: 38.2 °C."
+        }
+      ]
+    },
+    {
+      "tipo_dado": "video",
+      "evento": "analise_de_video_clinico",
+      "gravidade": "alto",
+      "descricao": "Movimento ou evento fora do padrão esperado detectado no vídeo.",
+      "evento_observado": "Paciente apresentou movimento brusco durante exercício de fisioterapia.",
+      "intensidade_movimento": 0.82
+    }
+  ]
+}
