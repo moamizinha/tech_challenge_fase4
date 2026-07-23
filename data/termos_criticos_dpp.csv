@@ -1,0 +1,38 @@
+termo,categoria,gravidade,descricao
+vontade de morrer,ideacao_suicida,critico,Ideação suicida ativa — encaminhamento imediato
+penso em morrer,ideacao_suicida,critico,Ideação suicida ativa
+não quero mais viver,ideacao_suicida,critico,Ideação suicida ativa
+quero desaparecer,ideacao_suicida,critico,Ideação suicida passiva
+quero sumir,ideacao_suicida,critico,Ideação suicida passiva
+seria melhor sem mim,ideacao_suicida,critico,Ideação suicida passiva — indireta
+estariam melhor sem mim,ideacao_suicida,critico,Ideação suicida passiva — indireta
+seria melhor para todo mundo,ideacao_suicida,critico,Ideação suicida passiva — indireta
+machucar meu filho,dano_bebe,critico,Risco de dano ao bebê
+machucar o bebê,dano_bebe,critico,Risco de dano ao bebê
+abandonar o bebê,dano_bebe,critico,Risco de negligência/abandono
+fazer algo ruim,dano_bebe,critico,Pensamento intrusivo de dano
+ouço vozes,psicose,critico,Alucinação auditiva — possível psicose puerperal
+vejo coisas,psicose,critico,Alucinação visual — possível psicose puerperal
+perdendo a sanidade,psicose,critico,Senso de perda de realidade
+saio do meu corpo,dissociacao,critico,Despersonalização — dissociação
+não me reconheço no espelho,dissociacao,critico,Despersonalização
+não sou mais eu,dissociacao,critico,Despersonalização
+estou desaparecendo,dissociacao,critico,Dissociação progressiva
+pensamentos intrusivos,pensamentos_intrusivos,critico,Pensamentos intrusivos de dano
+pensamentos horríveis,pensamentos_intrusivos,critico,Pensamentos intrusivos
+imaginando coisas ruins,pensamentos_intrusivos,critico,Pensamentos intrusivos visuais
+medo de mim mesma,perda_controle,critico,Medo de perda de controle — risco a si mesma ou ao bebê
+com medo de mim mesma,perda_controle,critico,Medo de perda de controle
+me machucar,automutilacao,critico,Risco de automutilação
+aperto meu braço,automutilacao,critico,Sinal de automutilação
+choro sem motivo,humor,alto,Labilidade emocional persistente
+choro sem razão,humor,alto,Labilidade emocional persistente
+não sou boa mãe,culpa,alto,Culpa materna persistente
+não me sinto boa mãe,culpa,alto,Culpa materna persistente
+me sinto culpada,culpa,alto,Sentimento de culpa recorrente
+sentimento de culpa,culpa,alto,Sentimento de culpa recorrente
+ansiedade constante,ansiedade,alto,Ansiedade que não cede — avaliar tratamento
+não consigo relaxar,ansiedade,alto,Ansiedade persistente com impacto funcional
+verificando se está respirando,ansiedade,atencao,Hipervigilância com o bebê — comum mas monitorar
+verifico se está respirando,ansiedade,atencao,Hipervigilância com o bebê
+dias bons e dias ruins,humor,atencao,Oscilação de humor — acompanhar evolução

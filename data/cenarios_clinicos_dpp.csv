@@ -1,0 +1,16 @@
+id,transcricao,nivel_esperado,descricao_cenario
+1,"Eu tenho vontade de morrer, não aguento mais. Seria melhor para todo mundo se eu sumisse.",HIGH_RISK,Ideação suicida ativa com verbalização direta
+2,"Tenho pensamentos horríveis sobre machucar meu filho. Tenho medo de mim mesma.",HIGH_RISK,Pensamentos intrusivos de dano ao bebê com medo de perda de controle
+3,"Ouço vozes me dizendo que não sou capaz. Não me reconheço no espelho.",HIGH_RISK,Alucinação auditiva + despersonalização — possível psicose puerperal
+4,"Sinto que estou saindo do meu corpo. Não sou mais eu. Estou desaparecendo aos poucos.",HIGH_RISK,Dissociação severa com despersonalização progressiva
+5,"Tenho uma raiva que não consigo controlar. Medo de mim mesma perto do bebê.",HIGH_RISK,Raiva descontrolada com risco de dano — perda de controle
+6,"Não sinto nada pelo meu filho. Penso em abandonar o bebê e ir embora.",HIGH_RISK,Anedonia + risco de negligência/abandono
+7,"Me sinto culpada por não conseguir amamentar. Choro sem motivo o dia todo.",MONITORING,Culpa materna + labilidade emocional
+8,"Tenho ansiedade constante. Fico verificando se está respirando a cada 5 minutos.",MONITORING,Ansiedade com hipervigilância — funcional mas em risco
+9,"Tenho pensamentos que me assustam mas não agiria. Dias bons e dias ruins.",MONITORING,Pensamentos intrusivos leves com oscilação de humor
+10,"Não consigo relaxar nunca. Me sinto culpada quando durmo porque o bebê pode precisar.",MONITORING,Ansiedade + culpa — dificuldade funcional moderada
+11,"Voltei a trabalhar e me sinto dividida. Culpa por deixar o bebê mas preciso sustentar a casa.",MONITORING,Conflito trabalho-maternidade com culpa
+12,"Estou cansada mas feliz. O bebê está crescendo bem e meu marido ajuda bastante.",LOW_RISK,Adaptação normal com rede de apoio ativa
+13,"Tive dias difíceis no começo mas agora estou me adaptando. A rotina está funcionando.",LOW_RISK,Ajuste esperado ao pós-parto com evolução positiva
+14,"Fico cansada de madrugada mas sei que isso é normal. Tenho apoio da minha mãe.",LOW_RISK,Cansaço esperado com suporte familiar presente
+15,"Participo de um grupo de mães e isso me ajuda muito. Me sinto acolhida.",LOW_RISK,Rede de apoio ativa com engajamento social preservado
